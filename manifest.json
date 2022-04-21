@@ -1,0 +1,13 @@
+{
+    "manifest_version" : 2,
+    "name" : "Clean Facebook",
+    "version" : "1.0.0",
+    "content_scripts" : [
+        {
+            "matches" : [
+                "*://*.facebook.com/*"
+            ],
+            "js" : ["content.js"]
+        }
+    ]
+}

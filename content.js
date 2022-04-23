@@ -4,8 +4,11 @@ window.onload =() => {
         if(reels !== undefined && reels.length > 0)
             reels[0].parentElement.parentElement.parentElement.parentElement.innerHTML='';
         const sponsored = document.querySelector('[aria-label="Sponsored"]');
+        const sponsored1 = document.querySelector('[aria-label="label"]');
         if(sponsored)
             sponsored.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.innerHTML = ''
+        if(sponsored1)
+            sponsored1.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.innerHTML = '';
         setTimeout(reallyBlockIt, 200);
     }
     reallyBlockIt();
